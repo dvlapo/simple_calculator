@@ -1,0 +1,69 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background: rgb(20, 2, 5);
+    font-family: Impact, Haettenschweiler, 'Courier New', Courier, monospace;
+}
+.calc {    
+    margin: 0 auto;
+    border: 2px solid rgb(134, 143, 165);
+    background: rgb(134, 143, 165);
+    border-radius: 5px;  
+    max-width: 400px;
+    padding:  20px 10px 10px 10px;
+    height: 500px;
+}
+.calcKeys {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px;
+    grid-gap: 15px;
+}
+.screen {
+    height: 160px;
+    font-size: 80px;
+    text-align: right;
+    border: 1px solid  rgb(51, 73, 73);
+    border-radius: 5px;
+    background:  rgb(23, 29, 29);
+    color: white;
+    width: 80%;
+    align-content: center;
+    margin-left: 34px;
+    margin-top: 25px;
+}
+input {
+    font-size: x-large;
+}
+input[type="button"] {
+    font-size: x-large;
+    color: rgb(22, 15, 15);
+    background: rgb(248, 251, 251);
+    place-items: center;
+    border: 0.5px solid rgb(251, 251, 251);
+    border-radius: 5px;
+    height: 50px;
+    outline: none;
+}
+input[type="button"]:hover {
+    background:rgb(51, 73, 73);
+    color: rgb(212, 142, 92);
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+    border: none;
+    
+}
+input.clear {  
+    background: rgb(228, 31, 47);
+    font-weight: 900;
+    font-size: 25px;
+}
+input.equals {
+    background: rgb(18, 58, 48);
+    grid-row: span 2;
+    height: 118px;
+    font-size: 40px;
+}
+input.point {
+    grid-column: span 2;
+}

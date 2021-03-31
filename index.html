@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js"></script>
+</head>
+<body>
+    <form class="calc">
+        <input type="text" value="" name="screen" id="screen" class="screen" placeholder="0" disabled>
+        <div class="calcKeys">
+                <!-- FIRST ROW -->
+                <input onclick="print('7')" type="button" value="7" class="seven" id="key">
+                <input onclick="print('8')" type="button" value="8" class="eight">
+                <input onclick="print('9')" type="button" value="9" class="nine">
+                <input onclick="print('/')" type="button" value="÷" class="divide">
+                <input onclick="clr()" type="button" value="C" class="clear">
+               
+                <!-- SECOND ROW -->
+                <input onclick="print('4')" type="button" value="4" class="four">
+                <input onclick="print('5')" type="button" value="5" class="five">
+                <input onclick="print('6')" type="button" value="6" class="six">
+                <input onclick="print('*')" type="button" value="&times" class="multiply">
+                <input onclick="backspace()" type="button" value="←" class="backspace">     
+                <!-- THIRD ROW -->
+                <input onclick="print('1')" type="button" value="1" class="one">
+                <input onclick="print('2')" type="button" value="2" class="two">
+                <input onclick="print('3')" type="button" value="3" class="three">
+                <input onclick="print('-')" type="button" value="-" class="minus">
+                <input onclick="equals()" type="button" value="=" class="equals">
+                <!-- FOURTH ROW -->
+                <input onclick="print('.')" type="button" value="." class="point">
+                <input onclick="print('0')" type="button" value="0" class="zero">
+                <input onclick="print('+')" type="button" value="+" class="plus">
+                
+        </div>    
+    </form>    
+</body>
+</html>
